@@ -2,6 +2,9 @@
 
 A modern, responsive website concept for a pain-management clinic, focused on trust, treatment clarity, accessibility, and a cleaner patient journey.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Website-2ea44f?style=for-the-badge)](https://mahdi-1949.github.io/pacific-pain-clinic-concept/)
+[![Source Code](https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/mahdi-1949/pacific-pain-clinic-concept)
+
 > **Portfolio project / redesign concept.** This repository is presented as a design-and-development case study and is not the clinic's production website.
 
 ## Project Overview
@@ -40,7 +43,7 @@ Healthcare websites need to communicate credibility quickly while helping visito
 
 ## Project Status
 
-**Portfolio-ready concept — actively refined.**
+**Portfolio-ready concept — live on GitHub Pages and actively refined.**
 
 The repository is kept public to demonstrate front-end implementation, responsive design decisions, and healthcare website UX work.
 
@@ -48,4 +51,4 @@ The repository is kept public to demonstrate front-end implementation, responsiv
 
 ### Available for freelance website projects
 
-I design and build modern websites, landing pages, and conversion-focused digital experiences. Explore my other repositories on my [GitHub profile](https://github.com/mahdi-1949).
+I design and build modern websites, landing pages, and conversion-focused digital experiences. Explore my other work on my [GitHub profile](https://github.com/mahdi-1949).
