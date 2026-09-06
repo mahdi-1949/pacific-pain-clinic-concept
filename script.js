@@ -1,7 +1,1 @@
-const header=document.querySelector('.site-header');
-const reveals=document.querySelectorAll('.reveal:not(.hero .reveal)');
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.14});
-reveals.forEach(el=>observer.observe(el));
-addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30),{passive:true});
-document.querySelector('.menu').addEventListener('click',e=>{const button=e.currentTarget;const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));document.querySelector('nav').classList.toggle('mobile-open',!open)});
-document.querySelector('#demo-form').addEventListener('submit',e=>{e.preventDefault();const toast=document.querySelector('.toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),4000)});
+const slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.dots button')];let current=0,timer;function show(index){current=(index+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('active',i===current));dots.forEach((d,i)=>d.classList.toggle('active',i===current));clearInterval(timer);timer=setInterval(()=>show(current+1),6000)}document.querySelector('.next').addEventListener('click',()=>show(current+1));document.querySelector('.prev').addEventListener('click',()=>show(current-1));dots.forEach((d,i)=>d.addEventListener('click',()=>show(i)));show(0);
