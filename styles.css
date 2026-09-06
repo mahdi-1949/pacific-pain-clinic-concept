@@ -107,3 +107,13 @@
   .journal-hero{padding:140px 0 55px}.journal-masthead h1{font-size:58px;line-height:.82}.journal-feature{grid-template-columns:1fr;min-height:0;margin-top:45px}.journal-feature img{height:240px}.journal-feature>div{min-height:235px}
   .legal-document-hero{padding:145px 0 55px}.legal-document-hero:before{display:none}.legal-document-hero .breadcrumb{margin-bottom:40px}.legal-title-row{grid-template-columns:1fr;gap:40px}.legal-title-row h1{font-size:65px}.legal-meta{padding:28px 0 0;border-top:1px solid var(--line)}
 }
+
+/* High-contrast navigation for pages with light opening backgrounds */
+.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)){color:var(--ink)}
+.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .brand-mark{border-color:rgba(8,47,56,.28);background:rgba(255,255,255,.62);color:var(--green)}
+.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .brand-copy small{color:#627d80}
+.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .nav-cta{background:var(--green);color:#fff}
+.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .menu-toggle{border-color:rgba(8,47,56,.32)}
+.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .menu-toggle span{background:var(--green)}
+@media(min-width:801px){.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .main-nav>a:not(.nav-cta){color:#214b51}}
+@media(max-width:800px){.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .main-nav.open{color:#fff}.site-header:not(.is-sticky):has(+ main > :is(.about-signature-hero,.knee-focus-hero,.contact-action-hero,.legal-document-hero)) .main-nav.open .nav-cta{background:#fff;color:var(--green)}}
